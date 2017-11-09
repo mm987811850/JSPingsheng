@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>便签</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+
+<div id="main">
+
+    <!--移动端插件 Swiper-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/j.jpg" alt="">
+            </div>
+            <div class="swiper-slide"><img src="img/j1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/j2.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div><!--分页器-->
+    </div>
+    <!--轮播结束-->
+    <div class="btn-box">
+        <div class="wait active">未完成</div>
+        <div class="done">已完成</div>
+    </div>
+    <div class="content" style="background: url(img/bg.png);background-size: cover;">
+        <ul>
+            <li>
+                <input type="checkbox">
+                
+            </li>
+        </ul>
+    </div>
+    <div class="inner-box">
+        <div id="add">添加</div>
+    </div>
+</div>
+<div class="mask">
+    <div class="editarea ">
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <input type="button" value="提交" id='subimt'>
+        <div class="close">X</div>
+    </div>
+    <div class="showarea">
+        <div class="show-inner"></div>
+        <div class="showclose">X</div>
+    </div>
+</div>
+<!--现成动画-->
+<!--animate.css-->
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/index.js"></script>
+</html>
