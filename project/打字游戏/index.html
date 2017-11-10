@@ -302,6 +302,7 @@
             transform:rotate(360deg);
         }
     </style>
+    <link rel="stylesheet" href="../五子棋/css/wuziqi.css">
 
 </head>
 <body>
@@ -536,7 +537,7 @@
                 var keycode = e.keyCode;
                 var l = String.fromCharCode(keycode);
                 if (this.obj[l]) {
-                    this.main.removeChild(this.obj[l].ele);
+                    this.main.removeChild(this.obj[l].el);
                     delete this.obj[l];
                     this.scor++;
                     this.scorele.innerHTML=this.scor;
